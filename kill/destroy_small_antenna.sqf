@@ -9,7 +9,6 @@ task_3_2 = player createSimpleTask ["Destroy Small Antenna", task_3_0];
 	task_3_2 setSimpleTaskDestination (getMarkerPos "antenna_location_1");
 	task_3_2 setSimpleTaskType "destroy";
 	task_3_2 setTaskState "Created";
-	["TaskCreated",["","Destroy Small Antenna"]] call BIS_fnc_showNotification;
 
 _marker_antenna_sml = createMarker ["Destroy Small Antenna", getMarkerPos "antenna_location_1"];
 	_marker_antenna_sml setMarkerShape "ELLIPSE";

@@ -17,6 +17,7 @@ while {_run} do {
 		//Execute Missions
 		[] execVM "kill\return_fob_1.sqf";
 		[] execVM "kill\kill_done.sqf";
+		[] execVM "optional\destroy_mortar.sqf";
 		_run = false;
 	};
 };

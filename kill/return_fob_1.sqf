@@ -2,15 +2,15 @@ _run_1 = true;
 _run_2 = false;
 task_4_0_skip = false;
 task_3_0_done = false;
-task_3_5_done = false;
+task_Opt_1_done = false;
 task_3_6_skip = false;
 publicVariable "task_4_0_skip";
 publicVariableServer "task_3_5_skip";
-publicVariableServer "task_3_5_done";
+publicVariableServer "task_Opt_1_done";
 publicVariableServer "task_3_6_skip";
 
 while {_run_1} do {
-	if (((task_3_5_done) && (task_3_0_done)) || (task_4_0_skip)) then {
+	if (((task_Opt_1_done) && (task_3_0_done)) || (task_4_0_skip)) then {
 		_run_1 = false;
 		_run_2 = true;
 

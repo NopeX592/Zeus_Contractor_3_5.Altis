@@ -9,7 +9,6 @@ task_3_3 = player createSimpleTask ["Destroy Enemy Helicopters", task_3_0];
 	task_3_3 setSimpleTaskDestination (getMarkerPos "helicopter_location");
 	task_3_3 setSimpleTaskType "destroy";
 	task_3_3 setTaskState "Created";
-	["TaskCreated",["","Destroy Enemy Helicopters"]] call BIS_fnc_showNotification;
 
 _marker_helicopters = createMarker ["Destroy Enemy Helicopters", getMarkerPos "helicopter_location"];
 	_marker_helicopters setMarkerShape "ELLIPSE";

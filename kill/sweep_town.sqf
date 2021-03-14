@@ -9,7 +9,6 @@ task_3_4 = player createSimpleTask ["Sweep Town Held by Enemies", task_3_0];
 	task_3_4 setSimpleTaskDestination (getMarkerPos "sweep_town");
 	task_3_4 setSimpleTaskType "attack";
 	task_3_4 setTaskState "Created";
-	["TaskAssigned",["","Sweep Town Held by Enemies"]] call BIS_fnc_showNotification;
 	
 trg_tsk_3_4 = createTrigger ["EmptyDetector", getMarkerPos "sweep_town"];
 	trg_tsk_3_4 setTriggerArea [300, 300, 300, false];

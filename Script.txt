@@ -5,11 +5,6 @@ Destroy Comms Tower 🡻
 Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind Device 🡺 Return Eastwind Device 🡺 Pettka drives off with Eastwind
                                                                                   🡺 Assasinate Miller      🡺 IND get in touch       🡺 Hide Eastwind Device
 
-
-Optional:
-    Kill Artillery
-
-
 1st Briefing:
 	General:
 		• Since your last deployment three days tensions rose
