@@ -30,10 +30,8 @@ format [" Authors: %1<br/><br/>",getText (missionconfigfile >> "author")]+
 
 _roles = "<br/>"+
 "General:<br/>
-    • Since your last deployment a week ago tensions rose<br/>
+    • Since your last deployment three days tensions rose further<br/>
         • More CSAT activity<br/>
-        • Tried evacuate all civilians<br/>
-            • Still high civilian activity<br/>
     • Enemy Types to expect:<br/>
         • Mostly infantry<br/>
         • Some Technicals<br/>
@@ -47,39 +45,39 @@ _roles = "<br/>"+
         • Orange Markings are infected areas<br/>
         • Do not enter without consulting with me<br/>
         • Do not enter without CBRN Suits<br/>
+    • Relocated to new FOB<br/>
     • All intel you gather is sent back to me immediately<br/>
+    • Additional assets found at aircraft carrier or FOB Alpha<br/>
     • Enemy is more reactive<br/>
         • More QRFs<br/>
 <br/>
-Humanitarian:<br/>
-    • Collect Food and Medical supplies<br/>
-    • Load supplies on to HEMTTs<br/>
-    • Dropoff supplies in Kalithea<br/>
-    • Recapture Kalithea from IND<br/>
-    • Enemies will let off once IDAP arrives<br/>
-    • Air Drop can be called in via the radio in the marked area<br/>
-<br/>
-Investigation:<br/>
-    • Lost contact to squad<br/>
-        • Investigate their deaths<br/>
-        • Search them for Intel<br/>
-    • Lost contact to Blackfish<br/>
-        • Search for Blackbox and upload Datais<br/>
-        • Search for flight log<br/>
-    • Lost contact to Tank<br/>
-        • Investigate Debris<br/>
-    • Intel is for my eyes only<br/>
-    • Datais transferred automatically<br/>
-<br/>
 Kill:<br/>
-    • Kill Artillery<br/>
-            • High Priority<br/>
-    • After done with investigation:<br/>
-        • Sweep town of Chalkeia<br/>
-        • Destroy stationed Helicopters nearby<br/>
-        • Destroy the nearby comms towers<br/>
-            • You'll need charges<br/>
-            • RTB if necessary<br/>
+    • Kill Mortars<br/>
+        • High Priority<br/>
+    • Sweep town of Chalkeia<br/>
+        • Tank spotted in vicinity<br/>
+    • Destroy stationed Helicopters nearby<br/>
+        • Expect MRAPs<br/>
+    • Destroy the nearby comms towers<br/>
+        • You'll need charges<br/>
+        • Light defenses<br/>
+<br/>
+• Eastwind:<br/>
+    • We have analysed the intel you gathered<br/>
+    • Miller has defected from NATO<br/>
+    • Miller is now allied to IND<br/>
+    • He took the Eastwind device he captured a week ago<br/>
+    • You escorted the device in the convoy<br/>
+    • Expect more armor than usual<br/>
+    • Your tasks are<br/>
+        • Assasinate Miller<br/>
+            • Confirm the kill<br/>
+            • Search him from intel<br/>
+        • Recapture the Eastwind device<br/>
+            • We have 2 locations<br/>
+            • Marked on map<br/>
+            • The site closer to the front line is more likely as easier defendable<br/>
+            • Return Eastwind device to this FOB<br/>
 <br/>
 Support:<br/>
     • Artillery Strikes possible<br/>
@@ -91,29 +89,5 @@ Support:<br/>
 "";
 
 waitUntil {!isNull player};
-player createDiaryRecord ["Diary", ["Briefing 1",_roles]];
+player createDiaryRecord ["Diary", ["Briefing",_roles]];
 player createDiaryRecord ["Diary", [_mission, _diary_text]];
-
-//Create Drone Feeds
-while {_run_1} do {
-    sleep 1;
-
-    if (drone_feed_on) then {
-        _run_1 = false;
-        _run_2 = true;
-
-        //Start Feeds
-        []execVM "drone_feeds.sqf";
-    };
-};
-
-while {_run_2} do {
-    sleep 1;
-
-    if (drone_feed_off) then {
-        _run_2 = false;
-        
-        //Remove event handler Draw3D
-        removeAllMissionEventHandlers "Draw3D";
-    };
-};
