@@ -1,0 +1,143 @@
+Humanitarian:
+    Collect Food and Medical supplies 🡺 Dropoff Food and Medical supplies  🡻
+                                      🡺 Retake Village                     🡻
+                                                                            🡻
+Eastwind:                                                                   🡻
+    Investigate dead squad       🡻                     🡺🡺🡺🡺🡺🡺🡺🡺🡺🡺🡺 Return to get CBRN and Briefing 🡺 Contain Virus Outbreak 🡺 Capture Eastwind Device 🡺 Return Eastwind Device 🡺 Pettka drives off with Eastwind
+    Investigate downed Blackfish 🡻                     🡹                                                                               🡺 Assasinate Miller       🡺 IND get in touch       🡺 Hide Eastwind Device
+    Investigate destroyed Tank   🡻                     🡹
+                                 🡻 Kill:               🡹
+                                 🡺 Sweep Town          🡹
+                                 🡺 Destroy Helicopters 🡹
+                                 🡺 Destroy Comms Tower 🡹
+                                 🡺 Destroy Comms Tower 🡹
+
+Optional:
+    Kill Artillery
+
+
+1st Briefing:
+	General:
+		• Since your last deployment a week ago tensions rose
+			• More CSAT activity
+			• Tried evacuate all civilians
+				• Still high civilian activity
+		• Enemy Types to expect:
+			• Mostly infantry
+            • Some Technicals
+			• Expect some armour
+            • More ManPADs
+            • Mine fields are marked on map
+		• Front line markings only accurate for CSAT
+            • Past front line expect CSAT and IND
+            • Within should only be IND
+        • Virus Outbreak
+            • Orange Markings are infected areas
+            • Do not enter without consulting with me
+            • Do not enter without CBRN Suits
+        • Relocated to new FOB
+        • All intel you gather is sent back to me immediately
+        • Additional assets found at aircraft carrier or FOB Alpha
+        • Enemy is more reactive
+            • More QRFs
+
+    Humanitarian:
+        • Collect Food and Medical supplies
+        • Load supplies on to HEMTTs
+        • Dropoff supplies in Kalithea
+        • Recapture Kalithea from IND
+        • Enemies will let off once IDAP arrives
+        • Air Drop can be called in via the radio in the marked area
+
+    Eastwind:
+        • Lost contact to squad
+            • Investigate their deaths
+            • Search them for Intel
+        • Lost contact to Blackfish
+            • Search for Blackbox and upload Datais
+            • Search for flight log
+        • Lost contact to Tank
+            • Investigate Debris
+        • Intel is for my eyes only
+        • Datais transferred automatically
+
+    Kill:
+        • Kill Artillery
+            • High Priority
+        • After done with investigation:
+            • Sweep town of Chalkeia
+            • Destroy stationed Helicopters nearby
+            • Destroy the nearby comms towers
+                • You'll need charges
+                • RTB if necessary
+        
+	Support:
+        • Artillery Strikes possible
+            • Use only if no other way
+        • Mortar Support possible
+        • Supply drop
+            • If called in IND will most likely respond
+
+    • Only drone feeds we have
+    • Other drones were shot down
+	• Any questions?
+
+2nd Briefing:
+    • Hold checkpoint
+        • Man checkpoint at the Airflied of Almyra
+        • Earlier Team had no CBRN and is infected
+        • Pitch in temporarily
+        • Attacks expected
+        • Kill everyone not leaving the immediate area of the checkpoint
+            • IND controlled area
+            • IND has to keep their people Within
+        • Wait unitl new units arrive
+
+    • Eastwind:
+        • We have analysed the intel you gathered
+        • Miller has defected from NATO
+        • Miller is now allied to IND
+        • He took the Eastwind device he captured a week ago
+        • You escorted the device in the convoy
+        • Expect more armor than usual
+        • Your tasks are
+            • Assasinate Miller
+                • Confirm the kill
+                • Search him from intel
+            • Recapture the Eastwind device
+                • We have 2 locations
+                • Marked on map
+                • The site closer to the front line is more likely as easier defendable
+                • Return Eastwind device to this FOB
+
+Intermissions:
+    After Embark on first mission:
+        //Disable drone feeds
+		drone_feed_off = true;
+
+    After Collect:
+        • Dropoff goods in Kalithea
+        • Retake Kalithea from IND
+    
+    After Investigate:
+        • Sweep town of Chalkeia
+        • Destroy stationed Helicopters nearby
+        • Destroy the nearby comms towers
+            • You'll need charges
+            • RTB if necessary
+
+    After Dropoff and Investigate:
+        • RTB for further Briefing
+        • ANd equip CBRN suits
+
+    After Eastwind captured:
+        Pettka:
+            • Our drone shows that you found Eastwind device
+            • RTB with device
+            • Receive Debrief
+        IND:
+            • Intel indicates Eastwind Device has been moved
+            • Source gave us your frequency
+            • Hide the Eastwind device
+            • Cannot trust you
+            • Won't provide further information

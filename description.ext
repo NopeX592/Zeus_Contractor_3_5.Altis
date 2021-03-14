@@ -1,0 +1,157 @@
+
+//Mission Settings
+briefingName = "Operation Greywater Part 3.5";
+onLoadMissionTime = 1;
+
+author				= "Nope.X";
+onLoadName			= "Operation Greywater";
+onLoadMission		= "You're playing as a group of contractors trying to sabotage the enemy. The island of Altis is currently held by OPFOR and INDFOR";
+loadScreen			= "media\loading.paa";
+overviewPicture		= "media\loading.paa";
+overviewText		= "You're playing as a group of contractors trying to sabotage the enemy. The island of Altis is currently held by OPFOR and INDFOR";
+
+class Header
+{
+	gameType =  Coop;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 15;	// maximum number of players the mission supports
+};
+
+//Sounds
+class CfgSounds
+{
+	sounds[] = {};
+	class Hardbass
+	{
+		name = "Hardbass";
+		sound[] = {"media\hardbass.ogg", 0.8, 1, 100};
+		titles[] = {1, ""};
+	};
+};
+
+//ORBAT
+class CfgORBAT
+{
+	class 1cmd
+	{
+		id = 1;
+		idType = 1;
+		side = "West";
+		size = "Regiment";
+		type = "HQ";
+		commander = "Pettka";
+		commanderRank = "Colonel";
+		text = "%1 %2 %3";
+		textShort = "%1 %3";
+
+		class 1sqd
+		{
+			id = 2;
+			idType = 1;
+			side = "West";
+			size = "Squad";
+			type = "MotorizedInfantry";
+			insignia = "media\insignia.paa";
+			colorInsignia[] = {0,0,1,1};
+			commander = "Alex";
+			commanderRank = "Lieutenant";
+			text = "%1 %2 %3";
+			textShort = "%1 %3";
+			assets[] = {"B_MRAP_01_F","B_MRAP_01_hmg_F","B_Truck_01_flatbed_F"};
+		};
+		
+		class 2sqd
+		{
+			id = 3;
+			idType = 1;
+			side = "West";
+			size = "Squad";
+			type = "AttackRecon";
+			insignia = "media\insignia.paa";
+			colorInsignia[] = {0,0,1,1};
+			commander = "Peter";
+			commanderRank = "Lieutenant";
+			text = "%1 %2 %3";
+			textShort = "%1 %3";
+			assets[] = {"B_MRAP_01_F","C_Offroad_01_comms_F"};
+		};
+
+		class 3sqd
+		{
+			id = 4;
+			idType = 1;
+			side = "West";
+			size = "Squad";
+			type = "CombatAviation";
+			insignia = "media\insignia.paa";
+			colorInsignia[] = {0,0,1,1};
+			commander = "Ava";
+			commanderRank = "Lieutenant";
+			text = "%1 %2 %3";
+			textShort = "%1 %3";
+			assets[] = {"I_Heli_light_03_F"};
+		};
+
+		class 4sqd
+		{
+			id = 5;
+			idType = 1;
+			side = "West";
+			size = "Division";
+			type = "GeneralSupport";
+			commander = "Cuntington";
+			commanderRank = "Lieutenant";
+			text = "%1 %2 %3";
+			textShort = "%1 %3";
+
+			class 1art
+			{
+				id = 6;
+				idType = 1;
+				side = "West";
+				size = "Squad";
+				type = "Artillery";
+				commander = "Cuntington";
+				commanderRank = "Lieutenant";
+				text = "%1 %2 %3";
+				textShort = "%1 %3";
+				assets[] = {"B_MBT_01_arty_F"};
+			};
+
+			class 2art
+			{
+				id = 7;
+				idType = 1;
+				side = "West";
+				size = "Squad";
+				type = "Mortar";
+				commander = "Cuntington";
+				commanderRank = "Lieutenant";
+				text = "%1 %2 %3";
+				textShort = "%1 %3";
+				assets[] = {"B_T_Mortar_01_F"};
+			};
+
+			class 1drp
+			{
+				id = 8;
+				idType = 1;
+				side = "West";
+				size = "Squad";
+				type = "AviationSupport";
+				commander = "Cuntington";
+				commanderRank = "Lieutenant";
+				text = "%1 %2 %3";
+				textShort = "%1 %3";
+			};
+		};
+	};
+};
+
+//Respawn Settings
+respawn = 3;
+respawnDelay = 20;
+respawnDialog = 1;
+respawnOnStart = 0;
+respawnTemplates[] = { "MenuPosition" };
+respawnTemplatesVirtual[] = {}; 
