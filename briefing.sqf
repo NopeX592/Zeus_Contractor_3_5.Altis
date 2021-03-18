@@ -35,8 +35,9 @@ _roles = "<br/>"+
     • Enemy Types to expect:<br/>
         • Mostly infantry<br/>
         • Some Technicals<br/>
-        • Expect some armour<br/>
-        • More ManPADs<br/>
+        • Less armour than last deployment<br/>
+            • Will most likely be found in cities<br/>
+        • Some ManPADs<br/>
         • Mine fields are marked on map<br/>
     • Front line markings only accurate for CSAT<br/>
         • Past front line expect CSAT and IND<br/>
@@ -74,7 +75,7 @@ Kill:<br/>
     • Your tasks are<br/>
         • Assasinate Miller<br/>
             • Confirm the kill<br/>
-            • Search him from intel<br/>
+            • Search surrounding area for intel<br/>
         • Recapture the Eastwind device<br/>
             • We have 2 locations<br/>
             • Marked on map<br/>

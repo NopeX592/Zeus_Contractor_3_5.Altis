@@ -14,8 +14,9 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
 		• Enemy Types to expect:
 			• Mostly infantry
             • Some Technicals
-			• Expect some armour
-            • More ManPADs
+			• Less armour than last deployment
+                • Will most likely be found in cities
+            • Some ManPADs
             • Mine fields are marked on map
 		• Front line markings only accurate for CSAT
             • Past front line expect CSAT and IND
@@ -63,7 +64,7 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
         • Your tasks are
             • Assasinate Miller
                 • Confirm the kill
-                • Search him from intel
+                • Search surrounding area for intel
             • Recapture the Eastwind device
                 • We have 2 locations
                 • Marked on map
