@@ -52,8 +52,10 @@ _roles = "<br/>"+
         • More QRFs<br/>
 <br/>
 Kill:<br/>
-    • Kill Mortars<br/>
+    • Destroy Mortars<br/>
         • High Priority<br/>
+    • Destroy Tank (Optional)<br/>
+        • It can be found roaming the swamp of Limni<br/>
     • Sweep town of Chalkeia<br/>
         • Tank spotted in vicinity<br/>
     • Destroy stationed Helicopters nearby<br/>

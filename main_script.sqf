@@ -18,6 +18,7 @@ while {_run} do {
 		[] execVM "kill\return_fob_1.sqf";
 		[] execVM "kill\kill_done.sqf";
 		[] execVM "optional\destroy_mortar.sqf";
+		[] execVM "optional\destroy_tank.sqf";
 		_run = false;
 	};
 };

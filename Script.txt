@@ -31,8 +31,10 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
             • More QRFs
 
     Kill:
-        • Kill Mortars
+        • Destroy Mortars
             • High Priority
+        • Destroy Tank (Optional)
+            • It can be found roaming the swamp of Limni
         • Sweep town of Chalkeia
             • Tank spotted in vicinity
         • Destroy stationed Helicopters nearby
@@ -68,10 +70,6 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
     • Any questions?
 
 Intermissions:
-    After Embark on first mission:
-        //Disable drone feeds
-		drone_feed_off = true;
-
     After Collect:
         • Dropoff goods in Kalithea
         • Retake Kalithea from IND
