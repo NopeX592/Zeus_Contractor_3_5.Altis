@@ -23,18 +23,9 @@ while {_run} do {
 		_run = false;
 
 		//Spawn QRF
-		_randomUnits = selectRandom [5,6];
+		_randomUnits = selectRandom [3,4];
 		[
 			getMarkerPos "qrf_spawn_8",
-			getMarkerPos "qrf_target_5",
-			_randomUnits,
-			1,
-			independent
-		] call SU_fnc_spawnOPFOR;
-		
-		_randomUnits = selectRandom [5,6,7];
-		[
-			getMarkerPos "qrf_spawn_15",
 			getMarkerPos "qrf_target_5",
 			_randomUnits,
 			1,

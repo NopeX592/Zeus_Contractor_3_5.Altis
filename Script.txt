@@ -42,7 +42,17 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
         • Destroy the nearby comms towers
             • You'll need charges
             • Light defenses
-        
+
+    Support:
+        • Artillery Strikes possible
+            • Use only if no other way
+        • Mortar Support possible
+        • Supply drop
+            • If called in IND will most likely respond
+
+    • Any questions?
+
+2nd Briefing:
     • Eastwind:
         • We have analysed the intel you gathered
         • Miller has defected from NATO
@@ -59,13 +69,7 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
                 • Marked on map
                 • The site closer to the front line is more likely as easier defendable
                 • Return Eastwind device to this FOB
-
-	Support:
-        • Artillery Strikes possible
-            • Use only if no other way
-        • Mortar Support possible
-        • Supply drop
-            • If called in IND will most likely respond
+                • If approached wrong site first just continue on
 
     • Any questions?
 

@@ -37,14 +37,5 @@ while {_run} do {
 			1,
 			independent
 		] call SU_fnc_spawnOPFOR;
-		
-		_randomUnits = selectRandom [3,4,5,6];
-		[
-			getMarkerPos "qrf_spawn_15",
-			getMarkerPos "qrf_target_3",
-			_randomUnits,
-			1,
-			independent
-		] call SU_fnc_spawnOPFOR;
 	};
 };

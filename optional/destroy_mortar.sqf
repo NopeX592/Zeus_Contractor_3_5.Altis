@@ -17,8 +17,6 @@ while {_run} do {
 		task_Opt_1 setTaskState "Succeeded";
 		["TaskSucceeded",["","Destroy Mortars"]] call BIS_fnc_showNotification;
 		_marker_artillery setMarkerSize [0, 0];
-		task_Opt_1_done = true;
-		publicVariableServer "task_Opt_1_done";
 		_run = false;
 
 		//Spawn QRF

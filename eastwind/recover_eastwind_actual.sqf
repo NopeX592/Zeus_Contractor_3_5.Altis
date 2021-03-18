@@ -17,14 +17,10 @@ while {_run} do {
 	if ((player in eastwind_device) || (task_3_8_skip)) then {
 		task_3_8 setTaskState "Succeeded";
 		["TaskSucceeded",["","Recapture Eastwind Device"]] call BIS_fnc_showNotification;
+		task_3_7 setTaskState "Canceled";
+		["TaskCanceled",["","Recapture Eastwind Device"]] call BIS_fnc_showNotification;
 		[]execVM "eastwind\return_eastwind.sqf";
 		_marker_eastwind_actual setMarkerSize [0, 0];
 		_run = false;
-
-		//Cancel Eastwind Decoy
-		if (task_3_7_done) then {
-			task_3_7 setTaskState "Canceled";
-			["TaskCanceled",["","Get Boat (Optional)"]] call BIS_fnc_showNotification;
-		};
 	};
 };

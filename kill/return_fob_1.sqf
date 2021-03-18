@@ -2,15 +2,12 @@ _run_1 = true;
 _run_2 = false;
 task_4_0_skip = false;
 task_3_0_done = false;
-task_Opt_1_done = false;
 task_3_6_skip = false;
 publicVariable "task_4_0_skip";
-publicVariableServer "task_3_5_skip";
-publicVariableServer "task_Opt_1_done";
 publicVariableServer "task_3_6_skip";
 
 while {_run_1} do {
-	if (((task_Opt_1_done) && (task_3_0_done)) || (task_4_0_skip)) then {
+	if ((task_3_0_done) || (task_4_0_skip)) then {
 		_run_1 = false;
 		_run_2 = true;
 
@@ -19,7 +16,7 @@ while {_run_1} do {
 			task_3_6 setSimpleTaskDestination (getMarkerPos "FOB_Contractor_E");
 			task_3_6 setSimpleTaskType "meet";
 			task_3_6 setTaskState "Assigned";
-			["TaskAssigned",["","Return to FOB to get CBRN suits and Briefing"]] call BIS_fnc_showNotification;
+			["TaskCreated",["","Return to FOB to get CBRN suits and Briefing"]] call BIS_fnc_showNotification;
 			
 		trg_tsk_3_6 = createTrigger ["EmptyDetector", getMarkerPos "FOB_Contractor_E"];
 			trg_tsk_3_6 setTriggerArea [15, 15, 15, false];
@@ -28,7 +25,7 @@ while {_run_1} do {
 
 		while {_run_2} do {
 			if ((triggerActivated trg_tsk_3_6) || (task_3_6_skip)) then {
-				task_3_5 setTaskState "Succeeded";
+				task_3_6 setTaskState "Succeeded";
 				["TaskSucceeded",["","Return to FOB to get CBRN suits and Briefing"]] call BIS_fnc_showNotification;
 				deletevehicle trg_tsk_3_6;
 				[]execVM "eastwind\kill_miller.sqf";
