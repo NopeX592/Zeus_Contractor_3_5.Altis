@@ -7,10 +7,8 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
 
 1st Briefing:
 	General:
-		• Since your last deployment three days tensions rose
+		• Since your last deployment three days ago tensions rose
 			• More CSAT activity
-			• Tried evacuate all civilians
-				• Still high civilian activity
 		• Enemy Types to expect:
 			• Mostly infantry
             • Some Technicals
@@ -25,11 +23,6 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
             • Orange Markings are infected areas
             • Do not enter without consulting with me
             • Do not enter without CBRN Suits
-        • Relocated to new FOB
-        • All intel you gather is sent back to me immediately
-        • Additional assets found at aircraft carrier or FOB Alpha
-        • Enemy is more reactive
-            • More QRFs
 
     Kill:
         • Destroy Mortars
@@ -75,21 +68,6 @@ Destroy Comms Tower 🡺 Return to get CBRN and Briefing 🡺 Capture Eastwind D
     • Any questions?
 
 Intermissions:
-    After Collect:
-        • Dropoff goods in Kalithea
-        • Retake Kalithea from IND
-    
-    After Investigate:
-        • Sweep town of Chalkeia
-        • Destroy stationed Helicopters nearby
-        • Destroy the nearby comms towers
-            • You'll need charges
-            • RTB if necessary
-
-    After Dropoff and Investigate:
-        • RTB for further Briefing
-        • ANd equip CBRN suits
-
     After Eastwind captured:
         Pettka:
             • Our drone shows that you found Eastwind device
